@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
   logoContainer: {
     position: "absolute",
     top: 50,
+    alignItems: "center",
   },
   registerButton: {
     backgroundColor: "orange",

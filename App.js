@@ -18,9 +18,10 @@ export default function App() {
           backgroundColor: "dodgerblue",
           width: 100,
           height: 100,
-          borderWidth: 10,
-          borderColor: "royalblue",
-          borderRadius: 50, //at least half of the width, then it is a circle
+          shadowColor: "grey",
+          shadowOffset: { width: 10, height: 10 },
+          shadowOpacity: 0.5, // 0 is no shadow, 1 is full shadow
+          shadowRadius: 10,
         }}
       ></View>
     </View>

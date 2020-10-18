@@ -7,16 +7,12 @@ function WelcomeScreen(props) {
       source={require("../assets/background.jpg")}
       style={styles.background}
     >
-      {/* <Image
+      <Image
         source={require("../assets/logo-red.png")}
-        style={{
-          width: 200,
-          height: 200,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      ></Image> */}
+        style={styles.logo}
+      ></Image>
       <View style={styles.loginButton} />
+      <View style={styles.registerButton} />
     </ImageBackground>
   );
 }
@@ -28,6 +24,17 @@ const styles = StyleSheet.create({
   },
   loginButton: {
     backgroundColor: "yellow",
+    width: "100%",
+    height: 70,
+  },
+  logo: {
+    width: 100,
+    height: 100,
+    position: "absolute",
+    top: 50,
+  },
+  registerButton: {
+    backgroundColor: "orange",
     width: "100%",
     height: 70,
   },

@@ -18,6 +18,11 @@ export default function App() {
           backgroundColor: "dodgerblue",
           width: 100,
           height: 100,
+          borderWidth: 10,
+          borderColor: "royalblue",
+          borderRadius: 10, //round corner
+          borderTopWidth: 20,
+          borderTopLeftRadius: 30,
         }}
       ></View>
     </View>

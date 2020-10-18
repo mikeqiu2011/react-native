@@ -1,5 +1,12 @@
 import React from "react";
-import { StyleSheet, View, Image, ImageBackground, Button } from "react-native";
+import {
+  StyleSheet,
+  View,
+  Image,
+  ImageBackground,
+  Button,
+  Text,
+} from "react-native";
 
 function WelcomeScreen(props) {
   return (
@@ -7,10 +14,13 @@ function WelcomeScreen(props) {
       source={require("../assets/background.jpg")}
       style={styles.background}
     >
-      <Image
-        source={require("../assets/logo-red.png")}
-        style={styles.logo}
-      ></Image>
+      <View style={styles.logoContainer}>
+        <Image
+          source={require("../assets/logo-red.png")}
+          style={styles.logo}
+        ></Image>
+        <Text>Sell things you don't need</Text>
+      </View>
       <View style={styles.loginButton} />
       <View style={styles.registerButton} />
     </ImageBackground>
@@ -31,6 +41,8 @@ const styles = StyleSheet.create({
   logo: {
     width: 100,
     height: 100,
+  },
+  logoContainer: {
     position: "absolute",
     top: 50,
   },

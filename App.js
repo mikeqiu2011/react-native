@@ -3,6 +3,7 @@ import React from "react";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import { Text, View } from "react-native";
+import AppText from "./app/component/AppText";
 
 export default function App() {
   return (
@@ -13,25 +14,10 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <Text
-        style={{
-          fontFamily: "Courier", //this is IOS only
-          fontSize: 30,
-          fontStyle: "italic",
-          fontWeight: "600",
-          color: "tomato",
-          textTransform: "uppercase",
-          textDecorationLine: "line-through",
-          textAlign: "justify",
-          lineHeight: 30,
-        }}
-      >
+      <AppText>
         I love React Native, this is my best course, very hands on, very
         interesting, bite sized, very easy to master
-      </Text>
+      </AppText>
     </View>
   );
 }
-
-//rnss - react native style sheet
-//rsf - react static function

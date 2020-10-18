@@ -6,29 +6,24 @@ import {
   View,
   SafeAreaView,
   Image,
-  TouchableNativeFeedback,
+  Button,
+  Alert,
+  Dimensions,
 } from "react-native";
+import { useDimensions } from "@react-native-community/hooks";
+
+const buttonStyle = { backgroundColore: "orange" };
 
 export default function App() {
+  console.log(useDimensions());
+  console.log(Dimensions.get("window"));
   const handlePress = () => {
     console.log("pressed");
   };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Text onPress={() => console.log("pressed ")}>hello world</Text>
-      <StatusBar style="auto" />
-
-      <TouchableNativeFeedback onPress={handlePress}>
-        <Image
-          blurRadius={10}
-          source={{
-            width: 200,
-            height: 200,
-            uri: "https://picsum.photos/200",
-          }}
-        ></Image>
-      </TouchableNativeFeedback>
+    <SafeAreaView style={buttonStyle}>
+      <View style={{ backgroundColor: "orange", width: "50%", height: 70 }} />
     </SafeAreaView>
   );
 }

@@ -1,38 +1,32 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  SafeAreaView,
-  Image,
-  Button,
-  Alert,
-  Dimensions,
-} from "react-native";
-import { useDimensions } from "@react-native-community/hooks";
-
-const buttonStyle = { backgroundColore: "orange" };
+import { View } from "react-native";
 
 export default function App() {
-  console.log(useDimensions());
-  console.log(Dimensions.get("window"));
-  const handlePress = () => {
-    console.log("pressed");
-  };
-
   return (
-    <SafeAreaView style={buttonStyle}>
-      <View style={{ backgroundColor: "orange", width: "50%", height: 70 }} />
-    </SafeAreaView>
+    <View
+      style={{
+        backgroundColor: "#fff",
+        flex: 1,
+      }}
+    >
+      <View
+        style={{
+          backgroundColor: "orange",
+          flex: 1,
+        }}
+      ></View>
+      <View
+        style={{
+          backgroundColor: "gold",
+          flex: 1,
+        }}
+      ></View>
+      <View
+        style={{
+          backgroundColor: "tomato",
+          flex: 1,
+        }}
+      ></View>
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

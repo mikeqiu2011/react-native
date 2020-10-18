@@ -20,9 +20,7 @@ export default function App() {
           height: 100,
           borderWidth: 10,
           borderColor: "royalblue",
-          borderRadius: 10, //round corner
-          borderTopWidth: 20,
-          borderTopLeftRadius: 30,
+          borderRadius: 50, //at least half of the width, then it is a circle
         }}
       ></View>
     </View>
